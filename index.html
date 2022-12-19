@@ -1,54 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-  <title>Garage Digital</title>
+	<meta charset="utf-8">
+	<title>Garage Digital</title>
+	<style>
+		body {
+			background-color: #1c1c1c;
+			color: #fff;
+			font-family: "Roboto", sans-serif;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			color: #00bfff;
+		}
+		a {
+			color: #00bfff;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		header {
+			background-color: #00bfff;
+			padding: 20px 0;
+		}
+		header .logo {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		header nav {
+			float: right;
+		}
+		header nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		header nav li {
+			display: inline-block;
+			margin-left: 20px;
+		}
+		main {
+			padding: 20px 0;
+		}
+		.intro {
+			font-size: 1.2em;
+			line-height: 1.5;
+		}
+		.programs {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.program {
+			width: 30%;
+			margin-bottom: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			background-color: #333;
+			padding: 20px;
+			color: #ccc;
+		}
+		.program h3 {
+			font-size: 1.2em;
+			margin-bottom: 10px;
+		}
+		.program p {
+			font-size: 0.9em;
+			line-height: 1.5;
+		}
+		footer {
+			background-color: #222;
+			padding: 20px 0;
+			color: #ccc;
+		}
+		footer .copyright {
+			margin-bottom: 10px;
+		}
+		footer ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			footer li {
+			display: inline-block;
+			margin-left: 20px;
+		}
+	</style>
 </head>
 <body>
-  <header>
-    <h1>Garage Digital</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#participants">Participants</a></li>
-      <li><a href="#resources">Resources</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>The Garage Digital program brings together artists, scientists, programmers, and art historians to explore and support new languages of visual culture arising from the influence of the latest technologies and media on everyday life and art and research practice.</p>
-    </section>
-    <section id="events">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>Tech Art Symposium</li>
-        <li>Virtual Reality Art Show</li>
-        <li>AI and Creativity Workshop</li>
-      </ul>
-    </section>
-    <section id="participants">
-      <h2>Participants</h2>
-      <ul>
-        <li>Alice Smith</li>
-        <li>Bob Johnson</li>
-        <li>Carla Williams</li>
-      </ul>
-    </section>
-    <section id="resources">
-      <h2>Resources</h2>
-      <ul>
-        <li><a href="https://techartguide.com/">Tech Art Guide</a></li>
-        <li><a href="https://virtualrealityart.com/">Virtual Reality Art</a></li>
-        <li><a href="https://aiandcreativity.org/">AI and Creativity</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>Copyright 2021 Garage Digital</p>
-  </footer>
+	<div class="container">
+		<header>
+			<div class="logo">Garage Digital</div>
+			<nav>
+				<ul>
+					<li><a href="#">Programs</a></li>
+					<li><a href="#">Artists</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="intro">
+				Welcome to the Garage Digital program, a collaboration between the Garage Museum of Contemporary Art and leading artists, scientists, programmers, and art historians. Our goal is to explore and support new languages of visual culture arising from the influence of the latest technologies and media on everyday life and art and research practice.
+			</div>
+			<div class="programs">
+				<div class="program">
+					<h3>Virtual Reality Art</h3>
+					<p>Join us for a series of workshops and exhibitions featuring artists working with virtual reality technology. Learn how to create immersive, interactive artworks and engage with this exciting new medium.
+					</p>
+				</div>
+				<div class="program">
+					<h3>Artificial Intelligence in Art</h3>
+					<p>Explore the intersection of art and artificial intelligence with experts in the field. Participate in talks, demonstrations, and hands-on workshops to learn how AI is transforming the creative process.
+					</p>
+				</div>
+				<div class="program">
+					<h3>Digital Fabrication</h3>
+					<p>Join us for a series of workshops and demonstrations featuring artists and designers using digital fabrication techniques such as 3D printing and laser cutting. Learn how to use these tools to create innovative artworks and prototypes.
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="copyright">Copyright 2021 Garage Museum of Contemporary Art</div>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</footer>
+	</div>
 </body>
 </html>
